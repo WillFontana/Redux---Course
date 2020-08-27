@@ -1,0 +1,77 @@
+.list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+    background-color: #fff;
+}
+
+.list-item {
+    width: 100%;
+    height: 40px;
+    padding-top: 16px;
+    font-size: 18px;
+    color: #242424;
+    list-style: circle;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.list-item .list-button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    outline: none;
+    cursor: pointer;
+    margin: auto;
+}
+.less-info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 11px;
+    color: #242424;
+}
+.list-item .list-button.-priorize{
+    right: 48px;
+}
+.list-item .list-button.-unpriorize{
+    right: 24px;
+}
+
+.list-item .list-button.-check{
+    right: 0px;
+}
+
+.list-item .list-button.-check.-mark .svg-icon{
+    fill: #29b162;
+}
+
+.list-item .list-button.-priorize:hover .svg-icon{
+    fill: #00c3ff;
+}
+.list-item .list-button.-unpriorize:hover .svg-icon{
+    fill: #eb9c35;
+}
+
+.list-item .list-button .svg-icon{
+    transition: all .2s ease-in-out;
+    fill: #666;
+}
+.list-item + .list-item {
+    margin-top: 15px;
+}
+.list-item.-risked {
+    list-style: disc;
+    color: #2424247c;
+    font-style: italic;
+}

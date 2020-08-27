@@ -1,0 +1,48 @@
+.viewtoggler {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.button-cards {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.button-cards .filter-button {
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    /* border: 1px solid #242424; */
+    border: none;
+    border-radius: 10px;
+    font-size: 11px;
+    color: #242424;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #8f8f8f;
+}
+.button-cards .filter-button.-active {
+    background-color: #242424;
+    color: #fff;
+    box-shadow: 0 0 10px none;
+}
+.viewtoggler .text {
+    margin: 0;
+    font-size: 24px;
+    color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.viewtoggler .text + .button-cards {
+    margin-top: 20px;
+}

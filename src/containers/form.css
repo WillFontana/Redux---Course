@@ -1,0 +1,41 @@
+.form-field {
+    width: 100%;
+    display: inline-flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+    background-color: #fff;
+}
+
+form {
+    display: block;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    border-radius: 6px;
+    border:1px solid #242424;
+    height: 30px;
+}
+form button {
+    width: auto;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 6px;
+    border: #242424;
+    background-color: #242424;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 0 10px #8f8f8f;
+    outline: none;
+}
+
+form button:active {
+    box-shadow: none;
+}
+
+form input + button {
+    margin-top: 20px;
+}
